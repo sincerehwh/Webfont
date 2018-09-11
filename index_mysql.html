@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MySQL数据类型</title>
+</head>
+<body>
+
+	<h2>MySQL五大数据类型：</h2>
+	
+	<p>整数类型：BIT、BOOL、TINY INT、SMALL INT、MEDIUM INT、 INT、 BIG INT</p>
+	<p>浮点数类型：FLOAT、DOUBLE、DECIMAL</p>
+	<p>字符串类型：CHAR、VARCHAR、TINY TEXT、TEXT、MEDIUM TEXT、LONGTEXT、TINY BLOB、BLOB、MEDIUM BLOB、LONG BLOB</p>
+	<p>日期类型：Date、DateTime、TimeStamp、Time、Year</p>
+	<p>其他数据类型：BINARY、VARBINARY、ENUM、SET、Geometry、Point、MultiPoint、LineString、MultiLineString、Polygon、GeometryCollection等</p>
+
+	<h2>数据类型 字节长度	范围或用法</h2>
+	<p>Bit			1		无符号[0,255]，有符号[-128,127](BIT和BOOL布尔型都占用1字节)</p>
+	<p>TinyInt		1		整数[0,255]</p>
+	<p>SmallInt		2		无符号[0,65535]，有符号[-32768,32767]</p>
+	<p>MediumInt	3		无符号[0,2^24-1]，有符号[-2^23,2^23-1]]</p>
+ 	<p>Int			4		无符号[0,2^32-1]，有符号[-2^31,2^31-1]</p>
+ 	<p>BigInt		8		无符号[0,2^64-1]，有符号[-2^63 ,2^63 -1]</p>
+ 	<p>Float(M,D)	4 		单精度浮点数。D是精度，如果D<=24则为默认的FLOAT，如果D>24则会自动被转换为DOUBLE型。</p>
+ 	<p>Double(M,D)	8	 	双精度浮点。</p>
+ 	<p>Decimal(M,D)	M+1或M+2	未打包的浮点数，用法类似于FLOAT和DOUBLE，您如果在ASP中使用到Decimal数据类型，直接从数据库读出来的Decimal可能需要先转换成Float或Double类型后再进行运算。</p>
+ 	<p>Date			3		以YYYY-MM-DD的格式显示</p>
+ 	<p>DateTime		8		以YYYY-MM-DD HH:MM:SS的格式显示</p>
+ 	<p>TimeStamp	4		以YYYY-MM-DD的格式显示</p>
+ 	<p>Time			3		以HH:MM:SS的格式显示</p>
+ 	<p>Year			1		以YYYY的格式显示</p>
+ 	<p>Char(M)		M  		定长字符串。	</p>
+ 	<p>VarChar(M)	M		变长字符串，要求M<=255</p>
+ 	<p>Binary(M)	M		类似Char的二进制存储，特点是插入定长不足补0</p>
+	<p>VarBinary(M)	M		类似VarChar的变长二进制存储，特点是定长不补0</p>
+	<p>TinyText	    Max:255	大小写不敏感</p>
+	<p>Text	        Max:64K	大小写不敏感</p>
+	<p>MediumText	Max:16M	大小写不敏感</p>
+	<p>LongText 	Max:4G	大小写不敏感</p>
+	<p>TinyBlob	    Max:255	大小写敏感</p>
+	<p>Blob	        Max:64K	大小写敏感</p>
+	<p>MediumBlob	Max:16M	大小写敏感</p>
+	<p>LongBlob	    Max:4G	大小写敏感</p>
+	<p>Enum	        1或2 	最大可达65535个不同的枚举值</p>
+	<p>Set			可达8	最大可达64个不同的值</p>
+	<p>Geometry	 	 </p>
+	<p>Point	 	 </p>
+	<p>LineString	 </p>
+	<p>Polygon	 	 </p>
+	<p>MultiPoint	 </p>
+	<p>MultiLineString	 </p>
+	<p>MultiPolygon	 	 </p>
+	<p>GeometryCollection</p>
+
+
+</body>
+</html>
